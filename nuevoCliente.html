@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>NewCliente</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Hamilo</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+ 
+                <li class="nav-item ">
+                    <a class="nav-link" href="inicio.html">
+                        <i class="fas fa-tachometer-alt"></i> Inicio
+                    </a>
+                </li>
+               
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-cart-plus"></i> Ventas
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="clientes.html">
+                        <i class="fas fa-users"></i> Clientes
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="productos.html">
+                        <i class="fas fa-cubes"></i> Productos
+                    </a>
+                </li>
+ 
+                <li class="nav-item ">
+                    <a class="nav-link" href="compras.html">
+                        <i class="fas fa-shopping-cart"></i> Compras
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="proveedores.html">
+                        <i class="fas fa-user-tag"></i> Proveedores
+                    </a>
+                </li>
+ 
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                                Cristhian Quiroga
+                            </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <a class="dropdown-item" href="#">Perfil</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Cerrar sesión</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-primary">
+                    <div class="card-header">
+                        <h4 class="card-title">Nuevo Cliente</h4>
+                    </div>
+                   <form action="" method="GET">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Nombres</label>
+                                        <input type="text" class="form-control" name="Nombres" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Apellidos</label>
+                                        <input type="text" class="form-control" name="Apellidos" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="">Identificación</label>
+                                        <input type="text" class="form-group" name="Identificacion" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="">Expe.</label>
+                                        <select name="expedido" class="form-control" required>
+                                            <option value="">Seleccionar</option>
+                                            <option value="LP">La Paz</option>
+                                            <option value="SC">Santa Cruz</option>
+                                            <option value="CB">Cochabamba</option>
+                                            <option value="Ta">Tarija</option>
+                                            <option value="BE">Beni</option>
+                                            <option value="PA">Pando</option>
+                                            <option value="PT">Potosi</option>
+                                            <option value="Other">Otro</option>
+
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Contacto</label>
+                                        <input type="number" name="contacto" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right">
+                            <a href="clientes.html" class="btn btn-danger">❌ cancelar</a>
+                            <button type="submit" class="btn btn-success">Guardar✅</button>
+
+                        </div>
+                    </form>
+
+                </di>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
